@@ -106,11 +106,12 @@ header{
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
-  color: white;
+  color: #FFFFFF;
   height: 400px;                /* Parallax effect */
 
   /* Your code here */
   background-image: url("../images/header.jpg");
+  background-color: #545454;
 
   /*Spans all of the columns.*/
   grid-column: 1 / -1;
