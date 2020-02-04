@@ -48,8 +48,8 @@ nav a:hover{
 
   /*Your code here - position relative to the parent */
   position: absolute;
-  /*Your code here - place 40px higher */;
-  margin-top: -40px;
+  /*Your code here - place 40px higher */
+  top: -40px;
 
 
 }
@@ -59,9 +59,7 @@ nav a:hover{
 link to the exact top of the page.*/
 
 .skip a:focus{
-  position: relative;
-  /*top: 0;*/
-  /*left:0;*/
+  top: 0px;
 
 }
 
@@ -77,7 +75,7 @@ footer{
   background-color: black;
   color: white;
   grid-column: 1 / -1; /*Can you explain what this does?
-                        spans all columns */
+                          spans all columns */
   grid-row: 7 / auto;   /*Can you rewrite it?*/
   padding-top: 30px;
   text-align: center;
@@ -94,7 +92,7 @@ nav{
   /*Spans all of the columns.*/
   grid-column: 1 / -1;
 
-  /*being on 1 row and span 1 row*/
+  /*begins on 1 row and span 1 row*/
   grid-row: 1 / span 1;
   /*desktop view*/
 
@@ -110,15 +108,17 @@ header{
   height: 400px;                /* Parallax effect */
 
   /* Your code here */
+
+  /* Set background-image to header.jpg in the images folder */
   background-image: url("../images/header.jpg");
   background-color: #545454;
 
   /*Spans all of the columns.*/
   grid-column: 1 / -1;
+  /*begins on the 2nd row and spans 1 row*/
   grid-row: 2 / span 1;
 
-  /* Set background-image to header.jpg in the images folder */
-  /* Span one row */
+
 }
 
 header p{
@@ -128,7 +128,6 @@ header p{
   text-align: center;
 }
 
-
 .container{
   /*Your code here  */
 
@@ -137,19 +136,14 @@ header p{
   grid-template-columns: 100px 400px 100px;
   grid-template-rows: 30px auto auto auto auto auto 100px ;
   grid-row-gap:15px;
-  /*desktop view */
 
 }
 .about, .method, .clients, .contact{
   /*Your code here */
 
-
   /*Begin in 2nd  column and span one column*/
   grid-column: 2 / span 1;
-  /*grid-row: 3/4/5/6/7/ span 1;*/
 
-
-  /* See documentation for mobile view */
 
 }
 
@@ -194,12 +188,7 @@ header p{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-
-  vertical-align: middle;
-  margin: auto;
-
-
-  /*Align the content in the center */
+  align-self: center;
 
 }
 
