@@ -200,12 +200,10 @@ header p{
   /*Your code here */
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
-
   /* See documentation for desktop view */ 
   }
 
   nav{
-    background-color: #ddd;
     text-align: right;
     padding: 35px 0px;
     align-self: center;
