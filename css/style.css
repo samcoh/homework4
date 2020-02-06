@@ -112,7 +112,7 @@ header{
   /* Set background-image to header.jpg in the images folder */
   background-image: url("../images/header.jpg");
   background-color: #545454;
-
+  /*the color she gave still had an error so used this default color because it passed*/
   /*Spans all of the columns.*/
   grid-column: 1 / -1;
   /*begins on the 2nd row and spans 1 row*/
